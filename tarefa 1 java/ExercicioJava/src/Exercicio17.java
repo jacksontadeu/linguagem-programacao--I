@@ -16,6 +16,7 @@ public class Exercicio17 {
         double media = ((p1*0.6)+ ((e1 + e2 )/ 2 * 0.4)) * 0.5;
         double max = Math.max(((p1*0.6)+ ((e1 + e2 )/ 2 * 0.4))- 5.9,0);
         double fator =  max / (((p1*0.6)+ ((e1 + e2 )/ 2 * 0.4))- 5.9);
+
         double api, mediaFinal, sub;
 
         if(fator ==1){
@@ -31,8 +32,5 @@ public class Exercicio17 {
             System.out.println(mediaFinal);
 
         }
-        
-        
-
     }
 }

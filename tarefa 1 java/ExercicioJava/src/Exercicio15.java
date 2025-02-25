@@ -14,7 +14,7 @@ public class Exercicio15 {
         double salarioTotal;
 
         if (qtdHoras > 160){
-            salarioTotal = salarioHora * (qtdHoras - 160) * 1.5;
+            salarioTotal = (salarioHora*160) + (salarioHora * (qtdHoras - 160) * 1.5);
             System.out.printf("Salário Total: R$ %.2f", salarioTotal);
 
         }else{

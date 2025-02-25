@@ -13,8 +13,12 @@ public class Exercicio2 {
         System.out.print("Total de votos validos: ");
         double validos = input.nextInt();
 
-        System.out.println("Total de brancos: " + (brancos / eleitores) * 100 + "%");
-        System.out.println("Total de nulos: " + (nulos / eleitores) * 100 + "%");
-        System.out.println("Total de validos: " + (validos / eleitores) * 100 + "%");
+        double totalBrancos = (brancos / eleitores) * 100;
+        double totalNulos = (nulos / eleitores) * 100;
+        double totalValidos = (validos / eleitores) * 100;
+
+        System.out.println("Total de brancos: " + totalBrancos + "%");
+        System.out.println("Total de nulos: " + totalNulos  + "%");
+        System.out.println("Total de validos: " + totalValidos + "%");
     }
 }

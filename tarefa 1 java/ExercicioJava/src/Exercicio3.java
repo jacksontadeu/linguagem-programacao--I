@@ -10,6 +10,8 @@ public class Exercicio3 {
         System.out.print("Digite o percentual de reajuste: ");
         double reajuste = input.nextDouble();
 
-        System.out.println("Salário atual: R$ " + (salario + (salario * reajuste) / 100));
+        double salarioAtual = salario + ((salario * reajuste) / 100);
+
+        System.out.printf("Salário atual: R$ %.2f ",salarioAtual);
     }
 }
