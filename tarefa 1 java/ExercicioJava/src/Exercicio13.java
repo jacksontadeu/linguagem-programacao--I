@@ -17,7 +17,9 @@ public class Exercicio13 {
 
         if (num1 < num2) System.out.printf("%d %d", num1, num2);
         else System.out.printf("%d %d ", num2, num1);
-        
+
+
+
 
     }
 }

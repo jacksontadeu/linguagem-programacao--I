@@ -10,15 +10,14 @@ public class Exercicio2 {
         double brancos = input.nextDouble();
         System.out.print("Total de votos nulos: ");
         double nulos = input.nextDouble();
-        System.out.print("Total de votos validos: ");
-        double validos = input.nextInt();
+        double validos = eleitores - brancos - nulos;
 
         double totalBrancos = (brancos / eleitores) * 100;
         double totalNulos = (nulos / eleitores) * 100;
         double totalValidos = (validos / eleitores) * 100;
 
-        System.out.println("Total de brancos: " + totalBrancos + "%");
-        System.out.println("Total de nulos: " + totalNulos  + "%");
-        System.out.println("Total de validos: " + totalValidos + "%");
+        System.out.printf("Total de brancos: %.2f \n" , totalBrancos );
+        System.out.printf("Total de nulos: %.2f \n ", totalNulos );
+        System.out.printf("Total de validos: %.2f \n ", totalValidos );
     }
 }

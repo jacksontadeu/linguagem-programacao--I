@@ -14,8 +14,11 @@ public class Exercicio17 {
         double e2 = input.nextDouble();
 
         double media = ((p1*0.6)+ ((e1 + e2 )/ 2 * 0.4)) * 0.5;
+        System.out.println(media);
         double max = Math.max(((p1*0.6)+ ((e1 + e2 )/ 2 * 0.4))- 5.9,0);
+        System.out.println(max);
         double fator =  max / (((p1*0.6)+ ((e1 + e2 )/ 2 * 0.4))- 5.9);
+        System.out.println(fator);
 
         double api, mediaFinal, sub;
 

@@ -12,5 +12,7 @@ public class Exercicio6 {
         double celsius = (far - 32) * (5/9.0);
 
         System.out.printf("%.2f em fahrenheit é %.2f é celsius", far,celsius);
+
+
     }
 }
