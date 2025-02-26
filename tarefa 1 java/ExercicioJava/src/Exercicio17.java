@@ -19,12 +19,13 @@ public class Exercicio17 {
                 (((p1*0.6)+ ((e1 + e2 )/ 2 * 0.4))- 5.9);
 
         double api, mediaFinal, sub, pontosExtras;
+        
+        System.out.print("Pontos Extras: ");
+        pontosExtras = input.nextDouble();
 
         if(max ==1){
             System.out.print("Nota API: ");
             api = input.nextDouble();
-            System.out.print("Pontos Extras: ");
-            pontosExtras = input.nextDouble();
             mediaFinal = media + (api * 0.5) + pontosExtras;
             if (mediaFinal < 6){
                 System.out.print("Nota SUB: ");
@@ -37,8 +38,6 @@ public class Exercicio17 {
         }else{
             System.out.print("Nota SUB: ");
             sub = input.nextDouble();
-            System.out.print("Pontos Extras: ");
-            pontosExtras = input.nextDouble();
             mediaFinal = media + (sub * 0.3) + pontosExtras;
             System.out.printf("Media Final: %.1f",mediaFinal);
         }
