@@ -30,7 +30,7 @@ public class Exercicio17 {
             if (mediaFinal < 6){
                 System.out.print("Nota SUB: ");
                 sub = input.nextDouble();
-                mediaFinal += (sub * 0.3);
+                mediaFinal += (sub * 0.3) + pontosExtras;
                 System.out.printf("Média final: %.1f",mediaFinal);
             }else{
                 System.out.printf("Média final: %.1f",mediaFinal);
