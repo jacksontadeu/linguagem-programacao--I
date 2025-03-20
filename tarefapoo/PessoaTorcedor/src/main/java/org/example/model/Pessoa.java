@@ -1,5 +1,7 @@
 package org.example.model;
 
+import javafx.scene.control.Alert;
+
 public class Pessoa {
 
     private String nome;
@@ -13,6 +15,7 @@ public class Pessoa {
     }
 
     public void setNome(String nome) {
+
         this.nome = nome;
     }
 
@@ -32,10 +35,5 @@ public class Pessoa {
         this.idade = idade;
     }
 
-    public String comemorarTitulo(){
 
-        return "Vai " + this.time;
-
-
-    }
 }
