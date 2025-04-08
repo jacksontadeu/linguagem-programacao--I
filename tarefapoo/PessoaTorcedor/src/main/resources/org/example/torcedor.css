@@ -1,5 +1,5 @@
 .root{
-    -fx-background-color: #d6dcd6;
+    -fx-background-color: #23BAD9;
 }
 .botao-comemoracao{
     -fx-background-color: #43cf43;
@@ -8,7 +8,9 @@
 
 }
 .botao-lamentar{
-    -fx-background-color: red;
+    -fx-background-color: #C08B1C;
+    -fx-background-radius: 100%;
     -fx-font-size: 18px;
     -fx-text-fill: white;
+
 }

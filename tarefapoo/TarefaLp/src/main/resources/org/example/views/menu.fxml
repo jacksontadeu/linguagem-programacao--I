@@ -5,19 +5,21 @@
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.MenuController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.MenuController">
    <children>
       <MenuBar fx:id="menuprincipal" layoutY="2.0" prefHeight="28.0" prefWidth="592.0">
         <menus>
           <Menu mnemonicParsing="false" text="Arquivo">
             <items>
               <MenuItem fx:id="mni_carro" mnemonicParsing="false" onAction="#onClickCarro" text="Carro" />
+                  <MenuItem fx:id="mni_computador" mnemonicParsing="false" onAction="#onClickComputador" text="Computador" />
+                  <MenuItem fx:id="mni_cachorro" mnemonicParsing="false" onAction="#onClickCachorro" text="Cachorro" />
+                  <MenuItem fx:id="mit_casa" mnemonicParsing="false" onAction="#onClickCasa" text="Casa" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Sair">
             <items>
-              <MenuItem fx:id="mni_sairdosistema" mnemonicParsing="false" text="Sair do Sistema" />
+              <MenuItem fx:id="mni_sairdosistema" mnemonicParsing="false" onAction="#onClickSairDoSistema" text="Sair do Sistema" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Help">
