@@ -13,8 +13,6 @@ import org.controlsfx.control.action.Action;
 import org.example.App;
 import org.controlsfx.control.Notifications;
 
-
-
 import java.io.IOException;
 
 public class MenuController {
@@ -48,7 +46,13 @@ public class MenuController {
 
     }
     @FXML
-    void onClickCarro(ActionEvent event) {
+    void onClickCarro(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("views/carro.fxml"));
+        Parent cachorro = fxmlLoader.load();
+        Scene scene = new Scene(cachorro, 640, 480);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.show();
 
     }
 
@@ -64,7 +68,6 @@ public class MenuController {
     @FXML
     void onClickSairDoSistema(ActionEvent event) {
         Notifications.create()
-
                 .title("Sair do Sistema")
                 .text("Deseja sair???")
                 .darkStyle()
@@ -73,11 +76,6 @@ public class MenuController {
                     System.exit(0);
                 }))
                 .showConfirm();
-
-
-
-
-        //System.exit(0);
     }
 
 

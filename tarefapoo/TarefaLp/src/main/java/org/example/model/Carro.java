@@ -6,6 +6,15 @@ public class Carro {
     private String cor;
     private int anoFabricacao;
     private int velocidade;
+    private boolean estaLigado = false;
+
+    public boolean isEstaLigado() {
+        return estaLigado;
+    }
+
+    public void setEstaLigado(boolean estaLigado) {
+        this.estaLigado = estaLigado;
+    }
 
     public String getNome() {
         return nome;
@@ -38,25 +47,20 @@ public class Carro {
     public void setVelocidade(int velocidade) {
         this.velocidade = velocidade;
     }
-    public void ligarCarro(){
-        System.out.println("Ligando o carro....");
+
+    public boolean ligarCarro(){
+       if (this.estaLigado== false){
+           return false;
+       }else{
+           return true;
+       }
+
     }
     public int acelerarCarro(){
-        System.out.println("Acelerando o carro....");
-        this.velocidade += 10;
-        System.out.printf("Velocidde atual: %d \n", this.velocidade);
-        return this.velocidade;
+        return this.velocidade +=10;
     }
-    public void frearCarro(){
+    public int frearCarro(){
+        return  this.velocidade -=10;
 
-        if (this.velocidade > 0){
-            for(int i = this.velocidade; i > 0; i-=10){
-                System.out.println("Freando o carro....");
-                System.out.printf("Velocidde atual: %d \n", this.velocidade);
-                this.velocidade -= 10;
-            }
-            System.out.println("Carro parado");
-
-        }
     }
 }
