@@ -37,28 +37,18 @@ public class MenuController {
 
     @FXML
     void onClickCachorro(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("views/cachorro.fxml"));
-        Parent cachorro = fxmlLoader.load();
-        Scene scene = new Scene(cachorro, 640, 480);
-        Stage stage = new Stage();
-        stage.setScene(scene);
-        stage.show();
+        App.setRoot("views/cachorro");
 
     }
     @FXML
     void onClickCarro(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("views/carro.fxml"));
-        Parent cachorro = fxmlLoader.load();
-        Scene scene = new Scene(cachorro, 640, 480);
-        Stage stage = new Stage();
-        stage.setScene(scene);
-        stage.show();
+        App.setRoot("views/carro");
 
     }
 
     @FXML
-    void onClickCasa(ActionEvent event) {
-
+    void onClickCasa(ActionEvent event) throws IOException {
+        App.setRoot("views/casa");
     }
 
     @FXML
