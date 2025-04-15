@@ -5,6 +5,7 @@ module org.example {
     requires javafx.graphics;
     requires java.desktop;
 
+
     opens org.example to javafx.fxml;
     opens org.example.controller;
     opens org.example.model;

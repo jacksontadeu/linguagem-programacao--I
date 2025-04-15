@@ -17,6 +17,7 @@
                   <MenuItem fx:id="mni_casa" mnemonicParsing="false" onAction="#onClickCasa" text="Casa" />
                   <MenuItem fx:id="mni_celular" mnemonicParsing="false" onAction="#onClickCelular" text="Celular" />
                   <MenuItem fx:id="mni_conta" mnemonicParsing="false" onAction="#onClickContaBancaria" text="Conta Bancária" />
+                  <MenuItem fx:id="mni_instrumento" mnemonicParsing="false" onAction="#onClickInstrumentoMusical" text="Instrumento Musical" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Sair">

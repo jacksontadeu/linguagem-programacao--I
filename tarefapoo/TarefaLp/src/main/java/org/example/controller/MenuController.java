@@ -35,6 +35,9 @@ public class MenuController {
     private MenuItem mni_conta;
 
     @FXML
+    private MenuItem mni_instrumento;
+
+    @FXML
     private MenuItem mni_sairdosistema;
 
     @FXML
@@ -53,6 +56,11 @@ public class MenuController {
     void onClickCasa(ActionEvent event) throws IOException {
         App.setRoot("views/casa");
     }
+    @FXML
+    void onClickInstrumentoMusical(ActionEvent event) throws IOException {
+    App.setRoot("views/instrumentomusical");
+    }
+
 
     @FXML
     void onClickComputation(ActionEvent event) throws IOException {
