@@ -18,16 +18,21 @@ public class MenuController {
     private MenuBar menuprincipal;
 
     @FXML
-    private MenuItem mit_casa;
+    private MenuItem mni_casa;
 
     @FXML
     private MenuItem mni_cachorro;
 
     @FXML
+    private MenuItem mni_celular;
+
+    @FXML
     private MenuItem mni_carro;
 
     @FXML
-    private MenuItem mni_computador;
+    private MenuItem mni_computation;
+    @FXML
+    private MenuItem mni_conta;
 
     @FXML
     private MenuItem mni_sairdosistema;
@@ -37,6 +42,7 @@ public class MenuController {
         App.setRoot("views/cachorro");
 
     }
+
     @FXML
     void onClickCarro(ActionEvent event) throws IOException {
         App.setRoot("views/carro");
@@ -49,9 +55,19 @@ public class MenuController {
     }
 
     @FXML
-    void onClickComputador(ActionEvent event) {
-
+    void onClickComputation(ActionEvent event) throws IOException {
+        App.setRoot("views/computation");
     }
+
+    @FXML
+    void onClickCelular(ActionEvent event) throws IOException {
+        App.setRoot("views/celular");
+    }
+    @FXML
+    void onClickContaBancaria(ActionEvent event) throws IOException {
+        App.setRoot("views/contabancaria");
+    }
+
     @FXML
     void onClickSairDoSistema(ActionEvent event) {
         Notifications.create()
@@ -59,7 +75,7 @@ public class MenuController {
                 .text("Deseja sair???")
                 .darkStyle()
                 .position(Pos.TOP_CENTER)
-                .action(new Action("Sim, sair",e ->{
+                .action(new Action("Sim, sair", e -> {
                     System.exit(0);
                 }))
                 .showConfirm();

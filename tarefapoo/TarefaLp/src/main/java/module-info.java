@@ -3,6 +3,7 @@ module org.example {
     requires java.management;
     requires org.controlsfx.controls;
     requires javafx.graphics;
+    requires java.desktop;
 
     opens org.example to javafx.fxml;
     opens org.example.controller;
