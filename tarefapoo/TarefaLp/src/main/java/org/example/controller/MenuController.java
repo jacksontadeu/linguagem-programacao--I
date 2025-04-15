@@ -1,19 +1,16 @@
 package org.example.controller;
 
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.geometry.Pos;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.control.MenuBar;
-import javafx.scene.control.MenuItem;
-import javafx.stage.Stage;
+import java.io.IOException;
+
+import org.controlsfx.control.Notifications;
 import org.controlsfx.control.action.Action;
 import org.example.App;
-import org.controlsfx.control.Notifications;
 
-import java.io.IOException;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.geometry.Pos;
+import javafx.scene.control.MenuBar;
+import javafx.scene.control.MenuItem;
 
 public class MenuController {
 

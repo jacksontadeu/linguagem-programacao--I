@@ -7,8 +7,10 @@ public class Casa {
     private int qtdeQuartos;
     private double area;
     private Double valor;
-
-    
+   
+    public void setRegiao(Regiao regiao) {
+        this.regiao = regiao;
+    }
     public double getValor() {
         return valor;
     }
@@ -41,15 +43,42 @@ public class Casa {
     public void setArea(double area) {
         this.area = area;
     }
+    private Regiao regiao;
+
+    
+    public void setValor(Double valor) {
+        this.valor = valor;
+    }
+    public Regiao getRegiao() {
+        return regiao;
+    }
     public StringBuilder detalharCasa(){
         StringBuilder sb = new StringBuilder();
         sb.append("Proprietario: "+proprietario + "\n")
         .append("cor: "+ cor + "\n")
         .append("Area: "+ area + " m² \n")
         .append("Dormitórios: "+ qtdeQuartos + " dormitórios \n ")
-        .append("Valor de Venda: R$ "+ valor);
+        .append("Valor de Venda: R$ "+ valor + "\n")
+        .append(regiao);
         
         return sb;
+    }
+    public void calcularValorVenda(){
+        switch(this.regiao){
+            case SUL:
+             this.valor = this.area *2000;
+            break;
+            
+            case LESTE:
+            this.valor = this.area *1500;
+            break;
+            
+            case NORTE:
+            this.valor = area *1000;
+            break;
+        }
+       
+       
     }
 
     
