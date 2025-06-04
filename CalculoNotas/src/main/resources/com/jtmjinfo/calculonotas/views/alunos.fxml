@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jtmjinfo.calculonotas.controller.RelatorioController">
+   <children>
+      <TableView fx:id="tv_aluno" layoutX="4.0" layoutY="77.0"  prefHeight="233.0" prefWidth="614.0">
+         <columns>
+            <TableColumn fx:id="tc_nome" prefWidth="190.66665649414062" text="Nome" />
+            <TableColumn fx:id="tc_p1" minWidth="9.999969482421875" prefWidth="36.0" text="P1" />
+            <TableColumn fx:id="tc_e1" prefWidth="43.33331298828125" text="E1" />
+            <TableColumn fx:id="tc_e2" prefWidth="44.6666259765625" text="E2" />
+            <TableColumn fx:id="tc_media" prefWidth="52.0" text="Média" />
+            <TableColumn fx:id="tc_api" prefWidth="61.33331298828125" text="API" />
+            <TableColumn fx:id="tc_extras" prefWidth="42.66668701171875" text="Extras" />
+            <TableColumn fx:id="tc_sub" prefWidth="58.66668701171875" text="Sub" />
+            <TableColumn fx:id="tc_mediaFinal" prefWidth="84.66668701171875" text="Média Final" />
+         </columns>
+      </TableView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-5.0" layoutY="16.0" prefHeight="35.0" prefWidth="620.0" text="Relatório de Alunos" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_rodape" alignment="CENTER" layoutX="11.0" layoutY="446.0" prefHeight="17.0" prefWidth="620.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="55.0" layoutY="318.0" prefHeight="68.0" prefWidth="559.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints />
+            <RowConstraints />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btn_voltar" contentDisplay="CENTER" mnemonicParsing="false" onAction="#voltarMenu" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/voltar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Voltar ao Menu Principal" />
+               </tooltip>
+            </Button>
+            <Button fx:id="btn_aluno" contentDisplay="CENTER" mnemonicParsing="false" onAction="#emitirAluno" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/aluno.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Relatório por Aluno" />
+               </tooltip>
+            </Button>
+            <Button fx:id="btn_geral" contentDisplay="CENTER" mnemonicParsing="false" onAction="#emitirGeral" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/variosalunos.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Relatório Geral" />
+               </tooltip>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
